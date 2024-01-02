@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body>
+    <header
+      class="bg-zinc-100 flex flex-col justify-center items-center px-16 py-12 max-md:px-5"
+    >
+      <section
+        class="flex w-full max-w-[1184px] flex-col items-stretch mt-1.5 mb-36 max-md:max-w-full max-md:mb-10"
+      >
+        <div
+          class="self-stretch flex items-stretch justify-between gap-5 max-md:max-w-full max-md:flex-wrap"
+        >
+          <img
+            loading="lazy"
+            src="./images/icons/back-arrow.svg"
+            class="aspect-square object-contain object-center w-9 overflow-hidden shrink-0 max-w-full"
+          />
+          <img
+            loading="lazy"
+            src="./images/icons/cross.svg"
+            class="aspect-square object-contain object-center w-9 overflow-hidden shrink-0 max-w-full"
+          />
+        </div>
+        <h1
+          class="text-zinc-800 text-5xl font-bold leading-7 self-center whitespace-nowrap mt-14 max-md:text-4xl max-md:mt-10"
+        >
+          Your Details
+        </h1>
+        <form
+          class="justify-center items-stretch bg-white self-center flex w-[438px] max-w-full flex-col mt-16 p-12 rounded-lg max-md:mt-10 max-md:px-5"
+        >
+          <label for="name">Name</label>
+          <input
+            type="text"
+            placeholder="Enter your name"
+            id="name"
+            aria-label="name"
+            aria-role="textbox"
+            class="leading-4 whitespace-nowrap items-stretch rounded border-[color:var(--material-theme-ref-neutral-neutral50,#787771)] bg-white justify-center mt-1 px-2 py-4 border-[0.5px] border-solid outline-none"
+          />
+
+          <label for="number" class="mt-10">Phone Number</label>
+          <div
+            class="flex mt-2 leading-4 whitespace-nowrap rounded border-[color:var(--material-theme-ref-neutral-neutral50,#787771)] bg-white my-1 border-[0.5px] border-solid"
+          >
+            <div class="flex bg-slate-300 px-3 py-4">
+              +977
+              <img src="./images/icons/down-arrow.svg" alt="" class="pr-3" />
+            </div>
+            <input type="text" class="outline-none w-full mx-4" />
+          </div>
+          <label for="notes" class="mt-8">Notes</label>
+          <input
+            type="text"
+            id="notes"
+            class="leading-4 whitespace-nowrap items-stretch rounded border-[color:var(--material-theme-ref-neutral-neutral50,#787771)] bg-white justify-center my-1 px-2 py-4 border-[0.5px] border-solid outline-none"
+          />
+
+          <button
+            class="text-white text-base font-semibold leading-6 whitespace-nowrap justify-center items-center bg-blue-600 mt-11 px-16 py-3 rounded-lg max-md:mt-10 max-md:px-5"
+          >
+            Complete Booking
+          </button>
+        </form>
+      </section>
+    </header>
+  </body>
+</html>
